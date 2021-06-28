@@ -3,6 +3,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    background-attachment: fixed;
 }
 .top{
     background-color: black;
@@ -46,6 +47,7 @@ body{
     z-index: 2;
 }
 .textwrap > h1{
+    color: black;
     font-size: 24px;
 }
 .card:hover {
