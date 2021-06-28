@@ -12,10 +12,13 @@ body{
     border: 4px solid black;
 }
 .top > h1{
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
     text-align: center;
     color: white;
 }
 .top > p{
+    font-family: 'Dancing Script', cursive;
     text-align: right;
     margin-bottom: 4px;
     color: white;
