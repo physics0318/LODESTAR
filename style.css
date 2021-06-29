@@ -9,10 +9,10 @@ body{
     background-attachment: fixed;
 }
 .top{
+    border: 1px solid black;
     background-image: url(topimage.jpg);
     width: 100%;
     height: 15%;
-    border: 4px solid black;
 }
 .top > h1{
     font-size: 40px;
@@ -25,6 +25,21 @@ body{
     text-align: right;
     margin-bottom: 4px;
     color: white;
+}
+#content-bar{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin-top: 2px;
+    text-align: left;
+}
+#content-bar > li{
+    background-color: #606060;
+    width: 20%;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+    display: inline-block;
 }
 article{
     margin-top: 0;
@@ -44,6 +59,7 @@ article > p{
     transform: scale(0.8);
 }
 .text-box-title{
+    position: relative;
     margin-bottom: 0;
     width: 100%;
     opacity: 80%;
@@ -80,6 +96,18 @@ article > p{
 .textwrap > h1{
     color: black;
     font-size: 24px;
+}
+#what:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#which:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#since:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 #showmagazine :hover{
     cursor: pointer;
