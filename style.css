@@ -1,5 +1,6 @@
 section{
     padding: 0;
+    margin-bottom: 50px;
 }
 body{
     background-image: url(backgroundlogo.svg);
@@ -33,7 +34,7 @@ body{
     margin-top: 2px;
     text-align: left;
 }
-#content-bar > li{
+#content-bar > h3{
     background-color: #606060;
     width: 20%;
     margin: 0;
