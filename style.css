@@ -3,6 +3,8 @@ section{
     margin-bottom: 50px;
 }
 body{
+    padding: 0;
+    margin: 0;
     background-image: url(backgroundlogo.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -27,17 +29,19 @@ body{
     margin-bottom: 4px;
     color: white;
 }
-#content-bar{
+nav{
     position: relative;
     width: 100%;
     padding: 0;
-    margin-top: 2px;
+    margin: 2px;
     text-align: left;
 }
-#content-bar > h3{
+nav > input{
+    font-size: 13px;
     background-color: #606060;
-    width: 20%;
+    height: 25px;
     margin: 0;
+    padding: 4px;
     text-align: center;
     border: 1px solid black;
     display: inline-block;
@@ -58,12 +62,13 @@ article > p{
     opacity: 0%;
     text-align: center;
     transform: scale(0.8);
+    transition: 0.3s;
 }
 .text-box-title{
     position: relative;
     margin-bottom: 0;
     width: 100%;
-    opacity: 80%;
+    opacity: 90%;
     text-align: left;
     background-color: #606060;
 }
@@ -100,15 +105,15 @@ article > p{
 }
 #what:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(0.95);
 }
 #which:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(0.95);
 }
 #since:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(0.95);
 }
 #showmagazine :hover{
     cursor: pointer;

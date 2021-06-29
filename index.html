@@ -12,12 +12,12 @@
         <p>since 2018 - 2020</p>
     </header>
     
-    <nav id="content-bar">
-        <h3 id="what">학술지란?</h3>
-        <h3 id="which">내용은?</h3>
-        <h3 id="since">역대 학술지</h3>
+    <nav>
+        <input type="button" value="학술지란?" onclick="nav_click(this.id)" id="what"></input>
+        <input type="button" value="내용은?" onclick="nav_click(this.id)" id="which"></input>
+        <input type="button" value="역대 학술지" onclick="nav_click(this.id)" id="since"></input>
     </nav>
-    
+
     <main>
         <section>
             <div class="text-box-title">
@@ -67,5 +67,6 @@
             </div>
         </section>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
