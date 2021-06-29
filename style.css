@@ -29,28 +29,30 @@ body{
 article{
     margin-top: 0;
     background-color: #959595;
+    opacity: 90%;
 }
 article > p{
     line-height: 30px;
     margin: 5%;
+    padding: 32px;
 }
 .card-list{
     position: relative;
     width: 100%;
+    opacity: 0%;
     text-align: center;
     transform: scale(0.8);
 }
 .text-box-title{
-    position: relative;
     margin-bottom: 0;
     width: 100%;
-    height: 36px;
     text-align: left;
     background-color: #606060;
 }
 .text-box-title > h1{
     font-size: 24px;
     margin-left: 3%;
+    padding: 10px;
 }
 .card{
     position: relative;
@@ -77,6 +79,14 @@ article > p{
 .textwrap > h1{
     color: black;
     font-size: 24px;
+}
+#showmagazine :hover{
+    cursor: pointer;
+}
+#showmagazine:hover .card-list{
+    font-size: 50px;
+    opacity: 100%;
+    transition: 0.3s;
 }
 .card:hover {
     transform:scale(0.95);
