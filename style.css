@@ -8,45 +8,49 @@ body{
     background-attachment: fixed;
 }
 section{
-    font-family: 'Nanum Myeongjo', serif;
-    padding: 0;
     margin-bottom: 50px;
+    font-family: 'Nanum Myeongjo', serif;
 }
 .top{
-    /* position: fixed; */
+    padding-bottom: 0;
     border: 1px solid black;
     background-image: url(topimage.jpg);
+    font-family: 'Dancing Script', cursive;
+    color: white;
     width: 100%;
-    z-index: 3;
+    height: 200px;
+    z-index: 2;
 }
 .top > h1{
+    padding-top: 60px;
     font-size: 40px;
-    font-family: 'Dancing Script', cursive;
     text-align: center;
-    color: white;
 }
 .top > p{
-    font-family: 'Dancing Script', cursive;
     text-align: right;
-    margin-bottom: 4px;
-    color: white;
+    margin-bottom: 2px;
 }
 nav{
-    position: relative;
+    position: fixed;
     width: 100%;
+    height: 45px;
     padding: 0;
     margin: 2px;
     text-align: left;
+    background-color: black;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.26);
+    z-index: 5;
 }
 nav > input{
-    font-size: 13px;
-    background-color: #606060;
-    height: 25px;
+    height: 45px;
     margin: 0;
-    padding: 4px;
-    text-align: center;
-    border: 1px solid black;
+    padding: 0px;
+    background-color: black;
+    border: 2px solid black;
     display: inline-block;
+    font-size: 13px;
+    text-align: center;
+    color: white;
 }
 article{
     margin-top: 0;
@@ -62,7 +66,7 @@ article > p{
 .card-list{
     position: relative;
     width: 100%;
-    opacity: 0%;
+    opacity: 100%;
     margin-top: 0;
     padding: 0;
     text-align: center;
@@ -105,25 +109,13 @@ article > p{
     color: black;
     font-size: 24px;
 }
-#what:hover{
-    cursor: pointer;
-    transform: scale(0.95);
-}
-#which:hover{
-    cursor: pointer;
-    transform: scale(0.95);
-}
-#since:hover{
-    cursor: pointer;
+nav :hover{
+    cursor:pointer;
+    color: yellow;
     transform: scale(0.95);
 }
 #showmagazine :hover{
     cursor: pointer;
-}
-#showmagazine:hover .card-list{
-    font-size: 50px;
-    opacity: 100%;
-    transition: 0.3s;
 }
 .card:hover {
     transform:scale(0.95);
