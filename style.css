@@ -52,6 +52,21 @@ nav > input{
     text-align: center;
     color: white;
 }
+ul{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+li{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    height: 20px;
+    background-color: grey;
+    opacity: 95;
+    margin: 2px;
+}
 article{
     margin-top: 0;
     background-color: #959595;

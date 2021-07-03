@@ -17,6 +17,7 @@ document.addEventListener("scroll", () => {
     var posY = window.scrollY;
     for (var i = 0; i < sections.length; i++) {
         var elm = document.getElementById(articles[i]);
+        var text = elm.getElementsByClassName("artcl");
         if (posY >= sections[i] - trigger - nav_height) {
             elm.style.transition = "0.2s ease-out 0s";
             elm.style.opacity = "95%";
