@@ -55,7 +55,7 @@ nav > input{
 article{
     margin-top: 0;
     background-color: #959595;
-    opacity: 95%;
+    opacity: 0%;
 }
 article > p{
     border-left: 15px solid #505050;
@@ -66,7 +66,7 @@ article > p{
 .card-list{
     position: relative;
     width: 100%;
-    opacity: 100%;
+    opacity: 0%;
     margin-top: 0;
     padding: 0;
     text-align: center;
@@ -110,6 +110,7 @@ article > p{
     font-size: 24px;
 }
 .bottom{
+    position: absolute;
     width: 100%;
     height: 100px;
     background-color: gray;

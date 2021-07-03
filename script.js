@@ -18,17 +18,13 @@ document.addEventListener("scroll", () => {
     for (var i = 0; i < sections.length; i++) {
         var elm = document.getElementById(articles[i]);
         if (posY >= sections[i] - trigger - nav_height) {
-            elm.style.transition = "opacity 0.3s linear 0s";
-            // elm.style.transition = "width 0.3s linear 0s";
+            elm.style.transition = "0.2s ease-out 0s";
             elm.style.opacity = "95%";
-            // elm.style.width = "100%";
             if (articles[i] === "magazine_cards") { //opacity 100%인 요소들
                 elm.style.opacity = "100%";
-                // elm.style.width = "100%";
             }
         } else{
             elm.style.opacity = "0%";
-            // elm.style.width = "0%";
         }
     }
 })
