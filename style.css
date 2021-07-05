@@ -9,10 +9,10 @@ body{
 }
 section{
     margin-bottom: 50px;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Gugi', cursive;
 }
 .top{
-    padding-bottom: 0;
+    position: relative;
     border: 1px solid black;
     background-image: url(topimage.jpg);
     font-family: 'Dancing Script', cursive;
@@ -20,15 +20,19 @@ section{
     width: 100%;
     height: 200px;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .top > h1{
-    padding-top: 60px;
     font-size: 40px;
-    text-align: center;
 }
 .top > p{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 0 5px 5px;
     text-align: right;
-    margin-bottom: 2px;
 }
 nav{
     position: fixed;
@@ -40,6 +44,7 @@ nav{
     background-color: black;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.26);
     z-index: 5;
+    display: inline-block;
 }
 nav > input{
     height: 45px;
@@ -47,10 +52,17 @@ nav > input{
     padding: 0px;
     background-color: black;
     border: 2px solid black;
-    display: inline-block;
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
     color: white;
+}
+nav > h1{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 25px;
+    font-family: fantasy;
+    display: inline-block;
 }
 ul{
     width: 50%;
@@ -58,7 +70,6 @@ ul{
     margin-right: auto;
 }
 li{
-    font-family: 'Nanum Myeongjo', serif;
     text-align: center;
     list-style: none;
     width: 100%;
@@ -67,15 +78,37 @@ li{
     opacity: 95;
     margin: 2px;
 }
+.text-box-title{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    opacity: 95%;
+    text-align: center;
+    background-image: url(./first-background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-box-title > h1{
+    font-size: 27px;
+    color: white;
+    margin: 100px;
+    padding: 10px;
+}
 article{
     margin-top: 0;
     background-color: #959595;
     opacity: 0%;
 }
 article > p{
+    width: 100%;
+    height: 200px;
     border-left: 15px solid #505050;
     line-height: 30px;
-    margin: 0;
+    font-family: 'Sunflower', sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
     padding: 32px;
 }
 .card-list{
@@ -87,18 +120,6 @@ article > p{
     text-align: center;
     transform: scale(0.8);
     transition: 0.3s;
-}
-.text-box-title{
-    position: relative;
-    width: 100%;
-    opacity: 95%;
-    text-align: left;
-    background-color: #505050;
-}
-.text-box-title > h1{
-    font-size: 24px;
-    margin-left: 3%;
-    padding: 10px;
 }
 .card{
     position: relative;
@@ -131,7 +152,7 @@ article > p{
     background-color: gray;
     text-align: center;
 }
-nav :hover{
+nav :hover:not(h1){
     cursor:pointer;
     color: yellow;
     transform: scale(0.95);

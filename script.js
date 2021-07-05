@@ -13,7 +13,7 @@ function nav_click(clicked_id) {
 
 
 document.addEventListener("scroll", () => {
-    const trigger = 50;
+    const trigger = 100;
     var posY = window.scrollY;
     for (var i = 0; i < sections.length; i++) {
         var elm = document.getElementById(articles[i]);
