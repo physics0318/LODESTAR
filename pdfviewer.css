@@ -1,3 +1,14 @@
-h1{
+header{
+    height: 200px;
     text-align: center;
+    background-image: url(./topimage.jpg);
+}
+header h1{
+    padding-top: 50px;
+    font-size: 35px;
+    font-family: "Gugi", cursive;
+    color: white;
+}
+.iframebox{
+    margin: 20px;
 }
