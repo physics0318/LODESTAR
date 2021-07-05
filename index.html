@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LODESTAR 학술지</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -12,9 +13,11 @@
 <body>
     <nav id="nav_bar">
         <h1>DGU LODESTAR</h1>
-        <input type="button" value="개요" onclick="nav_click(this.id)" id="what" class="nav_btn"></input>
-        <input type="button" value="주제예시" onclick="nav_click(this.id)" id="which" class="nav_btn"></input>
-        <input type="button" value="역대 학술지 보기" onclick="nav_click(this.id)" id="since" class="nav_btn"></input>
+        <ul>
+            <li onclick="nav_click(this.id)" id="what" class="nav_btn_active"> 개요</li>
+            <li onclick="nav_click(this.id)" id="which" class="nav_btn">주제예시</li>
+            <li onclick="nav_click(this.id)" id="since" class="nav_btn">역대 학술지 보기</li>
+        </ul>
     </nav>
 
     <header class = "top">
@@ -50,7 +53,7 @@
                 <li>물리학과 학우들 전체 또는 일부에게 전하고 싶은 말</li>
                 <li>같이 풀어보고 싶은 물리문제</li>
                 <li>취업 및 진학 후기</li>
-                <li>교수님께 쓰는 편지</li>
+                <li>. . .</li>
             </ul>
         </section>
         <section id="showmagazine">
