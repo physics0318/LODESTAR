@@ -165,7 +165,7 @@ article > p{
 .bottom{
     position: absolute;
     width: 100%;
-    height: 100px;
+    height: 200px;
     background-color: gray;
     text-align: center;
 }

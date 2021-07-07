@@ -56,12 +56,8 @@ function opacity_changer() {
                 continue;
             }
             continue;
-        } 
+        }
     }
 }
 
 window.addEventListener("scroll", opacity_changer);
-
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-}
