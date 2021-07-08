@@ -48,7 +48,7 @@ function opacity_changer() {
                 for (var j = 0; j < list.length; j++) {
                     list[j].style.transition = "0.3s ease-out " + (j*0.5).toString() + "s";
                     list[j].style.opacity = "95%";
-                    list[j].style.marginLeft = "50%"
+                    list[j].style.marginLeft = "15%"
                     continue;
                 }
             } else if (articles[i] === "magazine_cards") { //opacity 100%인 요소들
