@@ -17,6 +17,26 @@ section{
     margin-bottom: 50px;
     font-family: 'Gugi', cursive;
 }
+ul{
+    width: 70%;
+    font-family: 'Sunflower', sans-serif;
+}
+article{
+    margin-top: 0;
+    padding: 10px;
+    background-color: #959595;
+    opacity: 0%;
+    border-left: 15px solid #505050;
+}
+article > p{
+    width: 100%;
+    max-width: fit-content;
+    line-height: 30px;
+    font-family: 'Sunflower', sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 22px;
+}
 .top{
     position: relative;
     border: 1px solid black;
@@ -59,9 +79,10 @@ section{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
+    width: max-content;
     top: 0;
-    width: 100%;
+    right: 0;
     display: inline-block;
 }
 #nav_bar ul li{
@@ -69,7 +90,7 @@ section{
     margin: 0.5rem;
     padding: 0.3rem;
     background: black;
-    font-size: 15px;
+    font-size: 0.9rem;
     text-align: center;
     color: white;
     display: inline-block;
@@ -87,20 +108,16 @@ section{
     overflow: hidden;
     top: 0;
     color: white;
-    font-size: 30px;
+    font-size: 1.8rem;
     font-family: 'Open Sans', sans-serif;
     display: inline-block;
 }
-ul{
-    width: 70%;
-    font-family: 'Sunflower', sans-serif;
-}
 #second_expln li{
-    text-align: left;
+    text-align: center;
     list-style: none;
-    width: 100%;
+    width: max-content;
     height: 20px;
-    padding: 5px 0 5px 10%;
+    padding: 5px 10%;
     border-radius: 10px;
     background-color: grey;
     opacity: 0;
@@ -120,25 +137,11 @@ ul{
     align-items: center;
 }
 .text-box-title > h1{
-    font-size: 27px;
+    font-size: 150%;
     color: white;
     margin: 100px;
     padding: 10px;
-}
-article{
-    margin-top: 0;
-    background-color: #959595;
-    opacity: 0%;
-    border-left: 15px solid #505050;
-}
-article > p{
-    width: 100%;
-    max-width: fit-content;
-    line-height: 30px;
-    font-family: 'Sunflower', sans-serif;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 32px;
+    white-space: nowrap;
 }
 .card-list{
     position: relative;
