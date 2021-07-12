@@ -31,31 +31,32 @@ function opacity_changer() {
         if (posY < sections[0] - trigger - nav_height) {
             let k = 0;
             while (k < nav_list.length) {
-                nav_list[k++].className = "nav_btn"
+                nav_list[k++].className = "nav_btn";
             }
         }
         if (posY >= sections[i] - trigger - nav_height) {
             elm.style.transition = "0.2s ease-out 0s";
             elm.style.opacity = "95%";
-            let k = 0;
-            while (k < nav_list.length) {
-                nav_list[k++].className = "nav_btn"
+            
+            for (var k = 0; k < nav_list.length; k++) {
+                nav_list[k].className = "nav_btn";
             }
             document.getElementById(getKeyByValue(scroll_to, sections[i])).className = "nav_btn_active";
-            if (articles[i] === "first_artcl") {
-                continue;
-            } else if (articles[i] === "second_artcl") {
-                for (var j = 0; j < list.length; j++) {
-                    list[j].style.transition = "0.3s ease-out " + (j*0.5).toString() + "s";
-                    list[j].style.opacity = "95%";
-                    list[j].style.marginLeft = "15%"
-                    continue;
-                }
-            } else if (articles[i] === "magazine_cards") { //opacity 100%인 요소들
-                elm.style.opacity = "100%";
-                continue;
+            
+            switch(articles[i]) {
+                case "first_artcl":
+                    break;
+                case "second_artcl":
+                    for (var j = 0; j < list.length; j++) {
+                        list[j].style.transition = "0.3s ease-out " + (j*0.5).toString() + "s";
+                        list[j].style.opacity = "95%";
+                        list[j].style.marginLeft = "15%";
+                    }
+                    break;
+                case "magazine_cards":
+                    elm.style.opacity = "100%";
+                    break;
             }
-            continue;
         }
     }
 }
