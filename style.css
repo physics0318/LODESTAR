@@ -21,6 +21,10 @@ ul{
     width: 70%;
     font-family: 'Sunflower', sans-serif;
 }
+span{
+    width: 10rem;
+    height: 10rem;
+}
 article{
     margin-top: 0;
     padding: 10px;

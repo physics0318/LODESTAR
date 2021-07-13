@@ -1,8 +1,12 @@
-const nav_height = document.getElementById("nav_bar").offsetHeight;
-const magazine = document.getElementById("showmagazine").getBoundingClientRect().top + window.pageYOffset;
-const first_expln = document.getElementById("first_expln").getBoundingClientRect().top + window.pageYOffset;
-const second_expln = document.getElementById("second_expln").getBoundingClientRect().top + window.pageYOffset;
-const list = document.getElementById("second_expln").getElementsByTagName("li");
+let nav_height = document.getElementById("nav_bar").offsetHeight;
+let magazine = document.getElementById("showmagazine").getBoundingClientRect().top + window.pageYOffset;
+
+let first_expln = document.getElementById("first_expln").getBoundingClientRect().top + window.pageYOffset;
+
+let second = document.getElementById("second_expln");
+let second_expln = second.getBoundingClientRect().top + window.pageYOffset;
+let list = second.getElementsByTagName("li");
+
 let nav_list = document.getElementById("nav_bar").getElementsByTagName("li");
 
 const sections = [first_expln, second_expln, magazine];
