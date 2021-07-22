@@ -8,6 +8,7 @@ let second_expln = second.getBoundingClientRect().top + window.pageYOffset;
 let list = second.getElementsByTagName("li");
 
 let nav_list = document.getElementById("nav_bar").getElementsByTagName("li");
+let menu_icon = document.getElementById("menu_icon");
 
 const sections = [first_expln, second_expln, magazine];
 const articles = ["first_artcl", "second_artcl", "magazine_cards"];
@@ -18,7 +19,7 @@ function getKeyByValue(object, value) {
 }
 
 function nav_click(clicked_id) {
-    let j = 0;
+    let j = 1;
     while ( j < nav_list.length) {
         nav_list[j++].className = "nav_btn";
     }
@@ -29,7 +30,7 @@ function nav_click(clicked_id) {
 function opacity_changer() {
     const trigger = 100;
     var posY = window.scrollY;
-    for (var i = 0; i < sections.length; i++) {
+    for (let i = 0; i < sections.length; i++) {
         var elm = document.getElementById(articles[i]);
         elm.style.opacity = "0%";
         if (posY < sections[0] - trigger - nav_height) {
@@ -42,7 +43,7 @@ function opacity_changer() {
             elm.style.transition = "0.2s ease-out 0s";
             elm.style.opacity = "95%";
             
-            for (var k = 0; k < nav_list.length; k++) {
+            for (let k = 0; k < nav_list.length; k++) {
                 nav_list[k].className = "nav_btn";
             }
             document.getElementById(getKeyByValue(scroll_to, sections[i])).className = "nav_btn_active";
@@ -51,7 +52,7 @@ function opacity_changer() {
                 case "first_artcl":
                     break;
                 case "second_artcl":
-                    for (var j = 0; j < list.length; j++) {
+                    for (let j = 0; j < list.length; j++) {
                         list[j].style.transition = "0.3s ease-out " + (j*0.5).toString() + "s";
                         list[j].style.opacity = "95%";
                         list[j].style.marginLeft = "15%";
@@ -65,4 +66,21 @@ function opacity_changer() {
     }
 }
 
+function toggle_menu() {
+    document.querySelector("#nav_bar ul").style.transition = "0.3s";
+    if (menu_icon.className === "icon") {
+        document.querySelector("#nav_bar ul").style.width = "max-content";
+        document.querySelector("#nav_bar ul").style.right = "3rem";
+        document.querySelector("#nav_bar ul").style.opacity = "100%";
+        
+        menu_icon.className = "icon_toggle";
+    } else {
+        document.querySelector("#nav_bar ul").style.width = "max-content";
+        document.querySelector("#nav_bar ul").style.right = "0";
+        document.querySelector("#nav_bar ul").style.opacity = "0%";
+        
+        menu_icon.className = "icon";
+    }
+}
 window.addEventListener("scroll", opacity_changer);
+menu_icon.addEventListener("click", toggle_menu);
