@@ -81,7 +81,7 @@ article > p{
 }
 #nav_bar h1{
     position: static;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     padding: 0;
     overflow: hidden;
     color: white;
@@ -97,16 +97,15 @@ article > p{
     opacity: 0%;
     list-style-type: none;
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 #nav_bar ul li{
-    margin-left: 5px;
-    padding: 0 0.3rem;
-    background: black;
+    position: relative;
+    height: 60%;
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
+    margin-top: 8%;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    background: black;
     font-size: 0.9rem;
     text-align: center;
     color: white;
@@ -223,4 +222,22 @@ article > p{
     transform:scale(0.95);
     cursor: pointer;
     transition: 0.3s;
+}
+
+@media screen and (max-width: 568px) {
+    #nav_bar{
+        height: 10%;
+        min-height: 5rem;
+        display: inline;
+    }
+    #nav_bar h1{
+        margin-top: 0.5rem;
+    }
+    #nav_bar ul li{
+        margin-top: 5%;
+    }
+    #nav_bar #menu_icon{
+        position: absolute;
+        bottom: 0.5rem;
+    }
 }
