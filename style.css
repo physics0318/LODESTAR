@@ -39,7 +39,7 @@ article > p{
     margin-bottom: auto;
     padding: 22px;
 }
-.top{
+header{
     position: relative;
     border: 1px solid black;
     background-image: url(topimage.jpg);
@@ -52,17 +52,17 @@ article > p{
     justify-content: center;
     align-items: center;
 }
-.top > h1{
+header h1{
     font-size: 40px;
 }
-.top > p{
+header p{
     position: absolute;
     bottom: 0;
     right: 0;
     margin: 0 0 5px 5px;
     text-align: right;
 }
-#nav_bar{
+nav{
     position: fixed;
     width: 100%;
     height: 10%;
@@ -79,7 +79,7 @@ article > p{
     flex-direction: row;
     align-items: center;
 }
-#nav_bar h1{
+nav h1{
     position: static;
     margin-left: 0.5rem;
     padding: 0;
@@ -89,7 +89,7 @@ article > p{
     font-family: 'Open Sans', sans-serif;
     display: inline-block;
 }
-#nav_bar ul{
+nav ul{
     position: absolute;
     right: 0;
     width: 0;
@@ -98,7 +98,7 @@ article > p{
     list-style-type: none;
     overflow: hidden;
 }
-#nav_bar ul li{
+nav ul li{
     position: relative;
     height: 60%;
     border-top-left-radius: 0.4rem;
@@ -111,10 +111,10 @@ article > p{
     color: white;
     display: inline-block;
 }
-#nav_bar .nav_btn_active{
+nav .nav_btn_active{
     background: #BD8F4D;
 }
-#nav_bar .icon{
+nav .icon{
     position: absolute;
     padding: 0.2rem;
     border-radius: 10%;
@@ -122,7 +122,7 @@ article > p{
     margin-right: 1rem;
     transition: 0.3s;
 }
-#nav_bar .icon_toggle{
+nav .icon_toggle{
     background-color: #BD8F4D;
     position: absolute;
     padding: 0.2rem;
@@ -131,7 +131,7 @@ article > p{
     margin-right: 1rem;
     transition: 0.3s;
 }
-#nav_bar #menu_icon:hover {
+nav #menu_icon:hover {
     background-color: #BD8F4D;
     cursor: pointer;
     transition: 0.3s;
