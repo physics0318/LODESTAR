@@ -55,7 +55,9 @@ function opacity_changer() {
                     for (let j = 0; j < list.length; j++) {
                         list[j].style.transition = "0.3s ease-out " + (j*0.5).toString() + "s";
                         list[j].style.opacity = "95%";
-                        list[j].style.marginLeft = "15%";
+                        if (window.width >= "568px") {
+                            list[j].style.marginLeft = "15%";
+                        }
                     }
                     break;
                 case "magazine_cards":

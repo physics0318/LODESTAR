@@ -225,19 +225,22 @@ nav #menu_icon:hover {
 }
 
 @media screen and (max-width: 568px) {
-    #nav_bar{
+    nav{
         height: 10%;
         min-height: 5rem;
         display: inline;
     }
-    #nav_bar h1{
+    nav h1{
         margin-top: 0.5rem;
     }
-    #nav_bar ul li{
+    nav ul li{
         margin-top: 5%;
     }
-    #nav_bar #menu_icon{
+    nav #menu_icon{
         position: absolute;
         bottom: 0.5rem;
+    }
+    header{
+        padding-top: 5rem;
     }
 }
